@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/more.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" href="favicon.ico">
+		<!--link rel="icon" href="favicon.ico"-->
 	</head>
 	<body class="is-preload">
 
@@ -47,27 +47,17 @@
 					<section id="section1" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="home">
 						<div class="content">
 							<h1>Graeme Stroud</h1>
-							<p class="major"><!--I just completed my final year of undergraduate studies in Computer Science at the University of Toronto. My focus was in the Theory of Computation. I will be in the Masters of Math program (specialization in Computer Science) at the University of Waterloo this fall.-->
-								I am a Masters student (MMath) at the University of Waterloo. I am in the <a href="https://algcomp.uwaterloo.ca/"> Algorithms and Complexity</a> group within the Department of Computer Science. I completed my B.Sc at the University of Toronto.
-							</p>
+							<p class="major">I just completed my final year of undergraduate studies in Computer Science at the University of Toronto. My focus was in the Theory of Computation. I will be in the Masters of Math program (specialization in Computer Science) at the University of Waterloo this fall.</p>
 							<ul class="actions"> <!-- TODO stacked (i.e. "actions stacked") v.s. no stack? -->
 								<span >
 									<li><a href="#first" class="button big wide smooth-scroll-middle">About Me</a></li>
 								</span>
 								<li><a href="./resume.pdf" class="button big wide smooth-scroll-middle">Resume</a></li>
 								<!--li><a class="button big wide smooth-scroll-middle" a href='javascript:;' onclick="changeColor();">Colour</a></li-->
-								<!--li><a href="./MAT301" class="button big wide smooth-scroll-middle">Symmetric Groups</a></li-->
+								<li><a href="./MAT301" class="button big wide smooth-scroll-middle">Symmetric Groups</a></li>
 							</ul>
-							<img width="100%" src="images/me/uwaterloo4.png" alt="" />
+							<img width="100%" src="images/me/printed2.png" alt="email tbd" />
 
-						</div>
-
-						<!-- homepage.js for jquery slideshow or time of day options-->
-
-						<div class="image" onmousedown="return false" id="meme">
-							<div>
-								<img src="images/me/web1.jpg">
-							</div>
 						</div>
 						<!--div class="image" onmousedown="return false" id="meme">
 							<div>
@@ -100,8 +90,7 @@
 
 				<!-- Two : About me -->
 					<!--section class="banner style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-left" id="first"-->
-					<!--section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first"-->
-					<section class="banner fullscreen style1 orient-right content-align-left image-position-right onscroll-image-fade-in" id="first">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
 							<h2>About me</h2>
 							<p>I was born in raised in Toronto, Ontario. As a child, I enjoyed swimming (for fun and occasionally in swim meets),
@@ -110,20 +99,17 @@
 								Before attending the University of Toronto, I went to Bowmore Public School and Danforth Collegiate and Technical
 								Institute.
 								<br><br>
-								<br>
-
+								Here's a picture of me at 10 years old.</p>
+								<!--br><br><br><br><br><br><br-->
 							<ul class="actions stacked">
 								<li><a href="#second" class="button smooth-scroll-middle">Learn More</a></li>
 							</ul>
 						</div>
 						<div class="image" onmousedown="return false">
 							<!--img src="images/spotlight01.jpg" alt="" /!-->
-							<!--img src="images/me/younging.jpg" alt="" /-->
+							<img src="images/me/younging.jpg" alt="" />
 							<!--img src="images/me/pensive.jpg" alt="" /-->
 							<!--img src="images/me/100_49772.jpg" alt="" /-->
-							<!--img src="images/me/young-COLLAGE.jpg" alt="" /-->
-							<img src="images/me/B.jpg" alt="" />
-
 						</div>
 					</section>
 
@@ -152,9 +138,9 @@
 							<p>I just completed my senior year at the University of Toronto,
 								with a Computer Science Specialist and a Mathematics Minor.
 								I TA'd CSC263 in the winter 2019 term. I was a member of the Undergraduate Theory Group, where I planned social and course-related events.
-								I graduated in June 2019 with a H.B.Sc. in Computer Science with high distinction.</p>
+								I will be graduating this June with a H.B.Sc. in Computer Science.</p>
 							<ul class="actions stacked">
-								<li><a href="#third" class="button smooth-scroll-middle">Continue to My Research</a></li>
+								<li><a href="#third" class="button smooth-scroll-middle">Learn More</a></li>
 							</ul>
 						</div>
 						<div class="image" onmousedown="return false">
@@ -165,117 +151,41 @@
 
 				<!-- Four : Research-->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="third">
+						<div class="content">
+							<h2>Research</h2>
+							<p>I worked last fall with <a href="http://www.cs.toronto.edu/~anikolov/"> Aleksandar Nikolov </a> on a project
+								in the research area of Discrepancy Theory. We explored different geometric discrepancy approximation algorithms.
+							  We in particular looked at algorithms for halfspaces and how they could be improved. We deduced a tight lower bound for a costly
+							  subprocedure of the algorithm, suggesting there is not much room for improvement for the algorithm. Soon you can read more about
+							  my work <a href="./CSC494_report.pdf">here</a>. </p>
 
-							<div class="content">
-								<!--div style="display:flex;"-->
-
-									<!--div style="width:200px;">
-										<img src="images/research/disc1.png" alt="" > </img>
-									</div-->
-
-									<!--div style="flex-grow:1;"-->
-										<h2>Research</h2>
-
-										<p> I am currently a student under the supervision of <a href="http://www.cs.toronto.edu/~alubiw/"> Anna Lubiw</a>, focusing in Computational Geometry.</p>
-
-										<table>
-											<thead>
-												<tr>
-													<th>Title</th>
-													<th>Authors</th>
-													<th>Conference</th>
-													<th>doi</th>
-													<th>Year</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th>Distant Representatives for Rectangles in the Plane</th>
-													<th>Therese Biedl, Anna Lubiw, Anurag Murty Naredla, Peter Dominik Ralbovsky and Graeme Stroud</th>
-													<th>European Symposium on Algorithms</th>
-													<th>
-														<a href="https://doi.org/10.4230/LIPIcs.ESA.2021.17">10.4230/LIPIcs.ESA.2021.17</href>
-													</th>
-													<th>2021</th>
-												</tr>
-												<tr>
-													<th>Dispersion for Intervals: A Geometric Approach</th>
-													<th>Therese Biedl, Anna Lubiw, Anurag Murty Naredla, Peter Dominik Ralbovsky and Graeme Stroud</th>
-													<th>Symposium on Simplicity in Algorithms (SOSA)</th>
-													<th><a href="https://doi.org/10.1137/1.9781611976496.4">10.1137/1.9781611976496.4</a></th>
-													<th>2021</th>
-												</tr>
-											</tbody>
-										</table>
-
-										<!--p>During my undergraduate, I worked with <a href="http://www.cs.toronto.edu/~anikolov/"> Aleksandar Nikolov </a> on a project
-										in the research area of Discrepancy Theory. We explored different geometric discrepancy approximation algorithms.
-									  In particular we looked at algorithms for halfspaces and how they could be improved. We deduced a tight lower bound for a costly
-									  subprocedure of the algorithm, suggesting there is not much room for improvement for the algorithm. Soon you can read more about
-									  my work <a href="./CSC494_report.pdf">here</a>. </p-->
-										<!--p>In the summer of 2018, I worked under the supervision of <a href = "https://www.cs.toronto.edu/~azadeh/"> Azadeh Farzan </a>
-											on a project where the goal is to turn sequential code on arrays into parallel code. More information of this line of research can be found
-											<a href="http://www.cs.toronto.edu/~victorn/parsynt/index.html">here</a>.
-											I will hopefully have more information to share of my project soon/in the near future.</p-->
-
-										<h4>Teaching assignments</h4>
-											<ul>
-												<li>Current: CS 246 (IA) : Fall 2021</li>
-												<li>Past: CS 246 (IA) : Spring 2021,
-													CS 246 (TA) : Winter 2021,
-													CS 246 (IA) : Winter 2021,
-													CS 137 (IA) : Fall 2020,
-												  CS 240 (TA) : Spring 2020,
-												  CS 341 (TA) : Winter 2020,
-												  CS 246 (TA) : Fall 2019 </li>
-												<!--li>CS 246 (TA) : Winter 2021</li>
-												<li>CS 246 (IA) : Winter 2021</li>
-												<li>CS 137 (IA) : Fall 2020</li>
-												<li>CS 240 (TA) : Spring 2020</li>
-												<li>CS 341 (TA) : Winter 2020</li>
-												<li>CS 246 (TA) : Fall 2019</li-->
-											</ul>
-
-										<ul class="actions stacked">
-											<!--span><li><a href="work.html" class="button icon fa-book">See all of my research</a>
-											</li></span-->
-											<li><a href="#fourth" class="button smooth-scroll-middle">Continue to Courses and Projects</a></li>
-										</ul>
-
-										<!--p> Image Source: <a href="https://kam.mff.cuni.cz/~matousek/di.html"> Geometric Discrepancy: An Illustrated Guide </a> by Jiri Matousek</p-->
-
-									<!--/div-->
-								<!--/div-->
-							</div>
-
-							<!--div class="image" onmousedown="return false">
-								<img src="images/research/disc.png" alt=""> </img>
-							</div-->
+								<p>In the summer of 2018, I worked under the supervision of <a href = "https://www.cs.toronto.edu/~azadeh/"> Azadeh Farzan </a>
+									on a project where the goal is to turn sequential code on arrays into parallel code. More information of this line of research can be found
+									<a href="http://www.cs.toronto.edu/~victorn/parsynt/index.html">here</a>.
+									I will hopefully have more information to share of my project soon<!--in the near future-->.</p>
+								<p> Image Source: <a href="https://kam.mff.cuni.cz/~matousek/di.html"> Geometric Discrepancy: An Illustrated
+								Guide </a> by Jiri Matousek</p>
+							<ul class="actions stacked">
+								<li><a href="#fourth" class="button smooth-scroll-middle">Learn More</a></li>
+							</ul>
+						</div>
+						<div class="image" onmousedown="return false">
+							<!--img src="images/spotlight03.jpg" alt="" /-->
+							<!--img src="images/research/Equilateral_Triangle_Lattice.svg" alt="" /-->
+							<img src="images/research/disc.png" alt=""> </img>
 							<!--https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Equilateral_Triangle_Lattice.svg/220px-Equilateral_Triangle_Lattice.svg.png-->
+						</div>
 					</section>
 
 				<!-- Five : Courses -->
 					<section class="wrapper style1 align-center" id="fourth">
 						<div class="inner">
-							<h2>Courses and Projects</h2>
-							<p>I have taken many exciting courses at UofT and UWaterloo.</p>
+							<h2>Courses</h2>
+							<p>I have taken many exciting courses at UofT.</p>
 						</div>
-
 
 						<!-- Gallery. TODO CSC367? Machine Learning? 443? -->
 							<div class="gallery style2 medium lightbox onscroll-fade-in" onmousedown="return false">
-								<!--article>
-									<a href="images/gallery/fulls/kernel.png" class="image">
-										<img src="images/gallery/thumbs/kernel.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>CS 684 Computer Vision</h3>
-										<p>I constructed a Neural Network in order to perform Sementatic Image Segmentation. </p>
-										<ul class="actions fixed">
-											<li><span class="button small">View</span></li>
-										</ul>
-									</div>
-								</article-->
 								<article>
 									<a href="images/gallery/fulls/kernel.png" class="image">
 										<img src="images/gallery/thumbs/kernel.png" alt="" />
@@ -336,7 +246,7 @@
 									</a>
 									<div class="caption">
 										<h3>Other courses</h3>
-										<p>You can find more information on my CS course projects and side projects on my github page.</p>
+										<p>You can find more information on my CS course projects on my github page.</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Go to my UofT github repo</span></li>
 										</ul>
@@ -367,11 +277,10 @@
 									</div>
 								</article-->
 							</div>
-							<br>
 						<div>
 							<br>
 							<ul class="actions stacked">
-								<li><a href="#sixth" class="button smooth-scroll-middle">Continue to Programming Skills</a></li>
+								<li><a href="#sixth" class="button smooth-scroll-middle">Learn More</a></li>
 							</ul>
 						</div>
 
@@ -380,7 +289,7 @@
 				<!-- Six : Skills-->
 					<section class="wrapper style1 align-center" >
 						<div class="inner">
-							<h2>Programming Skills</h2>
+							<h2>Skills</h2>
 							<p>Over the past few years I have accumulated a diverse set of valuable programming skills. </p>
 							<div class="items style1 medium onscroll-fade-in" onmousedown="return false"> <!--onscroll-fade-in-->
 								<section>
@@ -450,12 +359,11 @@
 					<!-- Number placement TBD : Hobbies and Clubs -->
 						<section class="wrapper style1 align-center">
 							<div class="inner medium">
-								<h2>Hobbies</h2>
+								<h2>Hobbies and Clubs</h2>
 
-								<!--p>Clubs: <a href="https://www.facebook.com/groups/uoft.utg/?ref=br_rs"> Undergraduate Theory group</a></p-->
-								<!--p>Clubs: Nothing while campus is closed! </p-->
+								<p>Clubs: <a href="https://www.facebook.com/groups/uoft.utg/?ref=br_rs"> Undergraduate Theory group</a></p>
 
-								<p> Hobbies: Swimming, saxophone, kayaking, paddle boarding. Watching (too much) TV in my spare time.</p>
+								<p> Hobbies: Swimming, saxophone, kayaking. Watching (too much) TV in my spare time.</p>
 
 							</div>
 						</section>
@@ -488,8 +396,7 @@
 								<!--img width="720" height="72" src="images/me/email.png" alt="TBA" />
 								<img width="720" height="72" src="images/me/email2.png" alt="TBA" />
 								<img width="540" height="75" src="images/me/printed.png" alt="TBA" /-->
-								<img style="width:75%;height:75%;object-fit:cover;" src="images/me/uwaterloo4.png" alt="" id="email"/>
-								<p>DC 2305 (online only during COVID)</p>
+								<img width="687" src="images/me/printed2.png" alt="TBA" id="email"/>
 								<!--script  text="type/javascript">
 									// device detection
 									if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
@@ -513,8 +420,8 @@
 								<li><a href="https://www.facebook.com/graemerobinsonstroud" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
 								<!--li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li-->
 								<li><a href="https://www.linkedin.com/in/graeme-stroud" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<!--li><a href="mailto:noone@nowhere.ca" class="icon style2 fa-envelope"><span class="label">Email</span></a></li-->
-								<!--li><a href="RIP" class="icon style2 fa-google-plus"><span class="label">Google+</span></a></li-->
+								<li><a href="mailto:graeme.stroud@mail.utoronto.ca" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								<!--li><a href="https://plus.google.com/110834764329240554301" class="icon style2 fa-google-plus"><span class="label">Google+</span></a></li-->
 								<li><a href="https://github.com/stroudgr" class="icon style2 fa-github"><span class="label">Github</span></a></li>
 							</ul>
 						</div>
@@ -535,9 +442,6 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/homepage.js"></script>
 			<script src="assets/js/navigate.js"></script>
-			<noscript>
-  			<meta http-equiv="refresh" content="0;url=indexLite.html">
-			</noscript>
 
 	</body>
 </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orders of Sn</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script>window.jQuery || document.write('<script src="latest.js"><\/script>')</script>
+
+    <script src="sn.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script type="text/javascript" async src="path-to-mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+  </head>
+
+  <body>
+
+    <h1> Orders of $S_n$</h1>
+
+    Pick a value for $n$: <input type="text" id="myText" value="" size="6">
+
+    <button id="but">Enter</button>
+
+    <script>
+      $(document).ready(function() {
+        $("#but").click(function() {
+          $("#tab").empty();
+          $("#tab").append(sn());
+          $("#tab2").empty();
+          $("#tab2").append(sn2());
+        })
+      });
+
+      // Get the input field
+      var input = document.getElementById("myText");
+
+      // Execute a function when the user releases a key on the keyboard
+      input.addEventListener("keyup", function(event) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+          // Trigger the button element with a click
+          document.getElementById("but").click();
+        }
+      });
+    </script>
+
+    <br><br>
+
+    <div style="width: 100%; overflow: hidden;">
+      <div style="width: 600px; float: left;">
+        <table border="1" id="tab">
+          <tr><th>Cycle types</th><th>Order</th><th>Number of elements of this cycle type</th></tr>
+        </table>
+      </div>
+      <div style="margin-left: 620px;">
+        <table border="1" id="tab2">
+          <tr><th>Order</th><th>Number of elements of this order</th></tr>
+        </table>
+      </div>
+    </div>
+
+  </body>
+</html>
