@@ -1,5 +1,5 @@
 var slideshow = false;
-var htmlNOTjs = false;
+var htmlNOTjs = true;
 
 
 if (slideshow && !htmlNOTjs) {
