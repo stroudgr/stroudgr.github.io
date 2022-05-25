@@ -1,10 +1,12 @@
 var slideshow = false;
-var htmlNOTjs = true;
+var htmlNOTjs = false;
+
 
 if (slideshow && !htmlNOTjs) {
 // Slideshow
 $(function() {
 
+	console.log("Slideshow");
 	var settings = {
 		// Images (in the format of 'url': 'alignment').
 			images: {
@@ -15,6 +17,8 @@ $(function() {
 		// Delay.
 			delay: 6000
 	};
+
+	$("#meme").remove();
 
 	// TODO better fix than this.
 	$(section1).append(`<div class=\"image\" onmousedown=\"return false\" id=\"meme\">
@@ -53,6 +57,9 @@ $(function() {
 });
 } else if (!htmlNOTjs){
 
+	$("#meme").remove();
+
+	console.log("Time of day");
 // Time-of-day based. Will show different photos during different times of day.
 (function () {
 

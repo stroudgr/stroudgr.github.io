@@ -21,7 +21,7 @@ var prevScrollpos = window.pageYOffset;
   //window.onscroll = function() {  
     var currentScrollPos = window.pageYOffset;
                                           // Decrease 100 if I want header to appear when going up fast 
-    if (prevScrollpos >= currentScrollPos + 100 || prevScrollpos <= 20) {
+    if (prevScrollpos >= currentScrollPos + 1 || prevScrollpos <= 20) {
       //document.getElementById("navbar").style.top = "0";
       $("#navbar").css("top", "0");
     } else if (prevScrollpos < currentScrollPos) {
