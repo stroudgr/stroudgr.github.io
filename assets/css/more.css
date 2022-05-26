@@ -98,3 +98,75 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+#bottomNavbar {
+	background-color: #282828;
+	text-align: center;
+	position: fixed;
+	right: 1%;
+	bottom: 0;
+	width: 5%;
+	z-index: 10000;
+	cursor: default;
+	height: 3.2em;
+	line-height: 3.5em;
+	transition: bottom 0.5s; /* Transition effect when sliding down (and up) */
+
+}
+
+
+
+
+
+#bottomNavbar ul {
+	margin-bottom: 0;
+	list-style: none;
+	padding-left: 0;
+}
+
+#bottomNavbar li {
+	display: inline-block;
+	padding-left: 0;
+}
+
+
+#bottomNavbar a {
+	-moz-transition: background-color .2s ease-in-out;
+	-webkit-transition: background-color .2s ease-in-out;
+	-ms-transition: background-color .2s ease-in-out;
+	transition: background-color .2s ease-in-out;
+	position: relative;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	font-weight: 600;
+	border-radius: 8px;
+	color: #fff;
+	height: 2.5em;
+	line-height: 2.5em;
+	padding: 0 1.25em;
+}
+
+	#bottomNavbar a:hover {
+		color: #fff !important;
+		background: #383838;
+	}
+
+	#bottomNavbar a.active {
+		background: #484848;
+	}
+
+		#navbar a.active:before {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -0.6em;
+			left: 50%;
+			margin-left: -0.75em;
+			border-left: solid 0.75em transparent;
+			border-right: solid 0.75em transparent;
+			border-top: solid 0.6em #282828;
+		}
+
