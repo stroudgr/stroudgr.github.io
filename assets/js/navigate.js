@@ -35,9 +35,13 @@ var prevScrollpos = window.pageYOffset;
 $(window).scroll( () => {
   //window.onscroll = function() {  
     var currentScrollPos = window.pageYOffset;
-                                          // 
+    
+    //console.log(currentScrollPos);
+    //console.log(prevScrollpos);
+
     var emailPos = $('#email').position().top;                                      
-    if (currentScrollPos <= prevScrollpos - 1 || currentScrollPos >= emailPos - 1300) {
+    if (currentScrollPos <= prevScrollpos - 1 || currentScrollPos >= emailPos - 1000) {
+      console.log("TRUE");
       //document.getElementById("navbar").style.top = "0";
       $("#bottomNavbar").css("bottom", "0");
     } else if (currentScrollPos > prevScrollpos+20) {
@@ -45,8 +49,8 @@ $(window).scroll( () => {
 
       //console.log($(document).scrollTop());
       
-     // console.log(currentScrollPos); 
-      //console.log(emailPos - 1000);
+      console.log(currentScrollPos); 
+      console.log(emailPos - 1000);
 
       //console.log($(this).scrollTop() >= $('#target_element').position().top);
 
