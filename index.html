@@ -26,8 +26,8 @@
 				<ul class="container">
 					<li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="work.html">Projects</a></li>
-					<li><a href="resume.pdf">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+					<li><a href="#resume">Resume</a></li>
 					<li><a href="#email" class="smooth-scroll-middle">Contact</a></li>
 					<!--div class="dropdown">
 						<li><a href="#" class="dropbtn">Dropdown</a>
@@ -45,17 +45,17 @@
         <!-- Nav -->
 			<nav id="bottomNavbar">
 				<ul class="container">
-					<li><a href="#section1">&uarr;</a></li>
+					<li><a href="#resume">&uarr;</a></li>
 			</nav>
             
 
 
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="divided" onmousedown="return false">
+			<div id="wrapper" class="divided">
 
 				<!-- One : Intro -->
-					<section id="section1" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="home">
+					<section id="pagetop" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="home" onmousedown="return false">
 						<div class="content">
 							<h1>Graeme Stroud</h1>
 							<p class="major"><!--I just completed my final year of undergraduate studies in Computer Science at the University of Toronto. My focus was in the Theory of Computation. I will be in the Masters of Math program (specialization in Computer Science) at the University of Waterloo this fall.-->
@@ -73,7 +73,9 @@
 							<!--img width="100%" src="images/me/uwaterloo4.png" alt="" /-->
 
                             <ul class="actions"> <!-- TODO stacked (i.e. "actions stacked") v.s. no stack? -->
-                                <li><a href="#third" class="button big wide smooth-scroll-middle">Academics and Research</a></li>
+								<li><a href="#resume" class="button big wide smooth-scroll-middle">Resume</a></li>
+                                <li><a href="#academics" class="button big wide smooth-scroll-middle">Academics and Research</a></li>
+								<li><a href="#projects" class="button big wide smooth-scroll-middle">Projects</a></li>
 							</ul>
 
 
@@ -83,7 +85,7 @@
 
 						<div class="image" onmousedown="return false" id="meme">
 							<div>
-								<img src="images/me/web1.jpg">
+								<img src="images/me/web4.jpg" alt="">
 							</div>
 						</div>
 
@@ -117,8 +119,7 @@
 					</section-->
 
 
-				<!-- Four : Research-->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="third">
+					<section class="wrapper style1 align-center" id="resume">
 
 							<div class="content">
 								<!--div style="display:flex;"-->
@@ -127,18 +128,46 @@
 										<img src="images/research/disc1.png" alt="" > </img>
 									</div-->
 
-                                    <h2>
-                                        
-                                        Academics
-                                    </h2>
+                                    <h1>
+                                        <a href="resume.pdf">Resume</a>
+                                    </h1>
+									
+									
+									<!--ul class="actions">
+										<li><a href="resume.pdf" class="button big wide">Resume</a></li>
+										<li><a href="#" class="button big wide">CV</a></li>
+									</ul-->
 
-                                    I received my Bachelors in Computer Science at the University of Toronto in 2019. My GPA was 3.97. See my <a href="resume.pdf"> resume. </a>
+									<iframe src="resume.pdf" width="40%" height="1000px"><!--style="zoom:0.9">-->      </iframe> 
+									</iframe>
+									<br>
+									<br>
+									<a href="#academics" class="button big wide smooth-scroll-middle">Continue to Academics and Research</a>
+						
+							</div>
+					</section>
+
+						<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="academics">
+
+
+							
+
+									<div class="content">
+										<h2>
+											Academics
+										</h2>
+									
+									<!--p> My resume can be found <a href="resume.pdf"> here</a>. </p--> 
+									<p>I received my Bachelors in Computer Science at the University of Toronto in 2019. My GPA was 3.97. 
+									
+								
+                                    
 
 									<!--div style="flex-grow:1;"-->
-										
+									
+									I received my Masters in Computer Science at the University of Waterloo, under the supervision of <a href="http://www.cs.toronto.edu/~alubiw/"> Anna Lubiw</a>. My GPA was 3.975.</p>
 
-										<p> I received my Masters in Computer Science at the University of Waterloo, under the supervision of <a href="http://www.cs.toronto.edu/~alubiw/"> Anna Lubiw</a>. My GPA was 3.975.</p>
-
+				
 
                                         <h2>Research</h2>
 
@@ -152,17 +181,26 @@
 													<th>Title</th>
 													<th>Authors</th>
 													<th>Conference</th>
-													<th>doi</th>
+													<th>URL</th>
 													<th>Year</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
+													<th>Computing Realistic Terrains from Imprecise Elevations</th>
+													<th>Anna Lubiw and Graeme Stroud</th>
+													<th>Canada Conference on Computional Geometry (CCCG)</th>
+													<th>
+														<a href="https://www.torontomu.ca/content/dam/canadian-conference-computational-geometry-2022/papers/CCCG2022_paper_22.pdf">https://www.torontomu.ca/content/dam/canadian-conference-computational-geometry-2022/papers/CCCG2022_paper_22.pdf</href>
+													</th>
+													<th>2022</th>
+												</tr>
+												<tr>
 													<th>Distant Representatives for Rectangles in the Plane</th>
 													<th>Therese Biedl, Anna Lubiw, Anurag Murty Naredla, Peter Dominik Ralbovsky and Graeme Stroud</th>
-													<th>European Symposium on Algorithms</th>
+													<th>European Symposium on Algorithms (ESA)</th>
 													<th>
-														<a href="https://doi.org/10.4230/LIPIcs.ESA.2021.17">10.4230/LIPIcs.ESA.2021.17</href>
+														doi: <a href="https://doi.org/10.4230/LIPIcs.ESA.2021.17">10.4230/LIPIcs.ESA.2021.17</href>
 													</th>
 													<th>2021</th>
 												</tr>
@@ -170,7 +208,7 @@
 													<th>Dispersion for Intervals: A Geometric Approach</th>
 													<th>Therese Biedl, Anna Lubiw, Anurag Murty Naredla, Peter Dominik Ralbovsky and Graeme Stroud</th>
 													<th>Symposium on Simplicity in Algorithms (SOSA)</th>
-													<th><a href="https://doi.org/10.1137/1.9781611976496.4">10.1137/1.9781611976496.4</a></th>
+													<th>doi <a href="https://doi.org/10.1137/1.9781611976496.4">10.1137/1.9781611976496.4</a></th>
 													<th>2021</th>
 												</tr>
 											</tbody>
@@ -208,9 +246,9 @@
 											</ul>
 
 										<ul class="actions stacked">
-											<!--span><li><a href="work.html" class="button icon fa-book">See all of my research</a>
+											<!--span><li><a href="projects.html" class="button icon fa-book">See all of my research</a>
 											</li></span-->
-											<li><a href="#fourth" class="button smooth-scroll-middle">Continue to Courses and Projects</a></li>
+											<li><a href="#projects" class="button smooth-scroll-middle">Continue to Courses and Projects</a></li>
 										</ul>
 
 										<!--p> Image Source: <a href="https://kam.mff.cuni.cz/~matousek/di.html"> Geometric Discrepancy: An Illustrated Guide </a> by Jiri Matousek</p-->
@@ -226,10 +264,13 @@
 					</section>
 
 				<!-- Five : Courses -->
-					<section class="wrapper style1 align-center" id="fourth">
+					<section class="wrapper style1 align-center" id="projects">
 						<div class="inner">
 							<h2>Courses and Projects</h2>
-							<p>I have taken many exciting courses at UofT and UWaterloo.</p>
+							<p>I have taken many exciting courses at UofT and UWaterloo, and have done many interesting projects during school and on the side.
+								
+							</p>
+							<p>See my <a href="projects.html">projects page</a> for more details.</p>
 						</div>
 
 
@@ -445,7 +486,7 @@
 							</form-->
 							<!--p>Email: </p-->
 							<div onmousedown="return false">
-								FirstNameLastName(at)gmail(dot)com
+								(FirstName)(LastName)(at)gmail(dot)com
                                 
 								
 							</div>
@@ -457,7 +498,7 @@
 					<footer class="wrapper style1 align-center">
 
                         <br><br>
-                                <a href="#section1" class="button big wide smooth-scroll-middle">Back to top</a>
+                                <a href="#toppage" class="button big wide smooth-scroll-middle">Back to top</a>
 
 						<div class="inner">
 							<div onmousedown="return false">
