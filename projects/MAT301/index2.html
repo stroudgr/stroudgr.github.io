@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Orders of Sn</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+		<meta property="og:type"               content="article" />
+		<meta property="og:description"        content="How much does culture influence creative thinking?" /-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script>window.jQuery || document.write('<script src="latest.js"><\/script>')</script>
+
+    <script src="sn.js"></script>
+		<meta property="og:image"              content="images/me/me.png" />
+		<link rel="stylesheet" href="../../assets/css/main.css">
+		<link rel="stylesheet" href="../../assets/css/more.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="favicon.ico">
+	</head>
+
+	<style>
+		.math-group > * {
+			all:revert;
+		}
+	</style>
+	
+    <body class="is-preload">
+
+		<!--TODO dropdown or basic navigation menu-->
+		<!-- Nav -->
+			<nav id="navbar">
+				<ul class="container">
+					<li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../about.html">About</a></li>
+                    <li><a href="../../projects.html">Projects</a></li>
+					<li><a href="../../resume.pdf">Resume</a></li>
+					<li><a href="#email" class="smooth-scroll-middle">Contact</a></li>
+					<!--div class="dropdown">
+						<li><a href="#" class="dropbtn">Dropdown</a>
+							<div class="dropdown-content">
+						    <a href="#">Link 1</a>
+						    <a href="#">Link 2</a>
+						    <a href="#">Link 3</a>
+						  </div>
+						</li>
+					</div-->
+				</ul>
+			</nav>
+
+        
+        <!-- Nav -->
+			<nav id="bottomNavbar">
+				<ul class="container">
+					<li><a href="#resume">&uarr;</a></li>
+			</nav>
+        
+        
+
+		<!-- Wrapper -->
+			<div class="math-group">
+
+                <section class="banner fullscreen style1 orient-right">
+					<div class="content">
+
+                        <h1> Orders of \(S_n\)</h1>
+
+                        Pick a value for \(n \le 20\) : <input type="text" id="myText" value="" size="6" style="all:revert;">
+
+                        <button id="but" style="all:revert;">Enter</button>
+
+                        <script>
+							$(document).ready(function() {
+								$("#but").click(function() {
+								$("#tab").empty();
+								$("#tab").append(sn());
+								$("#tab2").empty();
+								$("#tab2").append(sn2());
+								})
+							});
+
+							// Get the input field
+							var input = document.getElementById("myText");
+
+							// Execute a function when the user releases a key on the keyboard
+							input.addEventListener("keyup", function(event) {
+								// Cancel the default action, if needed
+								event.preventDefault();
+								// Number 13 is the "Enter" key on the keyboard
+								if (event.keyCode === 13) {
+								// Trigger the button element with a click
+								document.getElementById("but").click();
+								}
+							});
+                        </script>
+
+                        <br><br>
+
+                        <div style="width: 100%; overflow: hidden;">
+                        	<div style="width: 55%; float: left;">
+                            	<table border="1" id="tab" style="all:revert;">
+                            		<tr style="all:revert;"><th style="all:revert;">Cycle types</th><th style="all:revert;">Order</th><th style="all:revert;">Number of elements of this cycle type</th></tr>
+                            	</table>
+                        	</div>
+							<div>
+                            	<table border="1" id="tab2" style="all:revert;">
+                            		<tr style="all:revert;"><th style="all:revert;">Order</th><th style="all:revert;">Number of elements of this order</th></tr>
+                            	</table>
+                        	</div>
+                        </div>
+					</div>
+
+                </section>
+
+                
+                <section class="wrapper style1 align-center" id="email">
+					<div class="inner medium">
+						<h2>Get in touch</h2>
+							<!--form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" value="" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" value="" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+								</ul>
+							</form-->
+							<!--p>Email: </p-->
+							<div onmousedown="return false">
+								(FirstName)(LastName)(at)gmail(dot)com
+                                
+								
+							</div>
+						</div>
+					</section>
+
+				
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+
+                        <br><br>
+                                <a href="#toppage" class="button big wide smooth-scroll-middle">Back to top</a>
+
+						<div class="inner">
+							<div onmousedown="return false">
+							<ul class="icons">
+								<!--li><a href="https://www.twitter.com/graemerstroud" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li-->
+								<!--li><a href="https://www.facebook.com/graemerobinsonstroud" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li-->
+								<!--li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li-->
+								<li><a href="https://www.linkedin.com/in/graeme-stroud" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<!--li><a href="mailto:noone@nowhere.ca" class="icon style2 fa-envelope"><span class="label">Email</span></a></li-->
+								<!--li><a href="RIP" class="icon style2 fa-google-plus"><span class="label">Google+</span></a></li-->
+								<li><a href="https://github.com/stroudgr" class="icon style2 fa-github"><span class="label">Github</span></a></li>
+							</ul>
+						</div>
+							<p>&copy; Graeme Stroud. <br> <br> Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<!--p>&copy; Graeme Stroud </p-->
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+			<script src="../../assets/js/homepage.js"></script>
+			<script src="../../assets/js/navigate.js"></script>
+			<noscript>
+  			<meta http-equiv="refresh" content="0;url=indexLite.html">
+			</noscript>
+
+	</body>
+</html>
