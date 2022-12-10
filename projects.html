@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Graeme Stroud</title>
+		<title>Graeme Stroud - Projects </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
@@ -28,7 +28,7 @@
 				<ul class="container">
 					<li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="work.html">Projects</a></li>
+                    <li><a href="projects.html">Projects</a></li>
 					<li><a href="resume.pdf">Resume</a></li>
 					<li><a href="#email" class="smooth-scroll-middle">Contact</a></li>
 					<!--div class="dropdown">
@@ -48,37 +48,108 @@
 					<li><a href="#fourth">&uarr;</a></li>
 			</nav>
 
+			<!-- Wrapper -->
+			<div id="wrapper" class="divided" onmousedown="return false">
+
+				<!-- Five : Courses -->
+					<section class="banner fullscreen style1 orient-right">
+					
+						<div class="content">
+						
+							
+							
+							<h1>Courses and Projects</h1>
+							<p>I have taken many exciting courses at UofT and UWaterloo, and have done many interesting projects during school and on the side.</p>
+							
+							<h2> Projects </h2>
+	
+							<h3> Distant Representatives calculator </h3>
+							
+							<img src="images/research/dr2.png" alt="">
+							</img>
+			
+							<p>
+								In the distant representatives problem, given input shapes in the plane, the goal is to place one point in each shape 
+								so that the points are as far apart from each other as possible.
+								At the University of Waterloo, I helped discover an approximation algorithm when the shapes are rectangles, see the <a href="https://arxiv.org/abs/2108.07751">arxiv page</a>.
+								
+								In my spare time, I've implemented a visualization tool for the problem using 
+								the <a href="http://fabricjs.com/">FabricJs</a> drawing library 
+								and a <a href="https://flask.palletsprojects.com/en/2.1.x/">Flask</a> backend server.
+								<a href="https://distant-representatives.herokuapp.com/"> Try the tool yourself! (Heroku has eliminated free hosting, I will get the project up and running again soon) </a> 
+
+								
+							</p>
+							Source code: <a href="https://github.com/stroudgr/DistantRepresentatives">Github</a>
+							
+							
+							<br>
+							<br>
+
+
+
+
+
+
+							<h3> Depth Estimation from a Single Image </h3>
+
+							This computer vision project was for a <a href="https://cs.uwaterloo.ca/~yboykov/Courses/cs484/">course</a> at Waterloo.   
+							Using PyTorch, I implemented a deep neural network that estimates the depth
+							of objects in an image.
+
+							Click <a href="projects/depth-estimation.html">here</a>ere for <br>
+
+
+							<!--h3>A database project </h3>
+
+							<h3> Unslack </h3>
+							This was a group project for a course at the University of Toronto.
+
+							Talk about AngularJS, Continuous Integration, etc...<br>
+	
+
+							<h3>CSC369 Assignment 1 </h3>
+
+							<h3> CSC418 Assignment 3 </h3>
+
+							<h3> CSC421 Assignments? </h3>
+
+							<h3> CSC443? :)</h3>
+
+							<ul>
+								<li>
+								<a href="undergradresearch/summer2018/index.html">Summer 2018: NSERC-USRA </a>
+								</li>
+								<li>
+								<a href="undergradresearch/CSC494/index.html"> Fall 2018: CSC494 </a>
+								</li>
+							</ul-->
+							
+							<br>
+
+							<h3>Symmetric Group calculator </h3>
+							A calculator that determines for the 
+							<a href="https://en.wikipedia.org/wiki/Symmetric_group"> symmetric group</a>
+							 \(S_n\)
+							the number of elements of each <a href="https://en.wikipedia.org/wiki/Permutation#Cycle_type">cycle type</a> and the number of elements of each <a href="https://en.wikipedia.org/wiki/Order_(group_theory)">order</a>. 
+							Click <a href="projects/MAT301/index2.html"> here</a> to use the tool.
+
+						</div>
+
+
+					</section>
+
+
+			<div>
+
+
 
 			<!-- Wrapper -->
 			<div id="wrapper" class="divided" onmousedown="return false">
 
 				<!-- Five : Courses -->
-					<section class="wrapper style1 align-center" id="fourth">
-
-						<br>
-						<br>
-						<br>
-						<br>
-						
-						<h1>This page is a work-in-progress.</h1>
-
-
-						<div class="inner">
-							<h2>Courses and Projects</h2>
-							<p>I have taken many exciting courses at UofT and UWaterloo.</p>
-						</div>
-
-						<h2> Projects </h2>
-
-					<ul>
-						<li>
-						<a href="undergradresearch/summer2018/index.html">Summer 2018: NSERC-USRA </a>
-						</li>
-						<li>
-						<a href="undergradresearch/CSC494/index.html"> Fall 2018: CSC494 </a>
-						</li>
-					</ul>
-
+					<section class="wrapper style1 align-center">
+					
 
 						<!-- Gallery. TODO CSC367? Machine Learning? 443? -->
 							<div class="gallery style2 medium lightbox onscroll-fade-in" onmousedown="return false">
@@ -196,32 +267,12 @@
 					</section>
 
 				
-				
+					<h1>More coming soon</h1>
 
 				<!-- Seven : Contact -->
 					<section class="wrapper style1 align-center" id="email">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
-							<!--form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form-->
-							<!--p>Email: </p-->
 							<div onmousedown="return false">
 								FirstNameLastName(at)gmail(dot)com
 							</div>
@@ -233,12 +284,7 @@
 						<div class="inner">
 							<div onmousedown="return false">
 							<ul class="icons">
-								<!--li><a href="https://www.twitter.com/graemerstroud" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li-->
-								<!--li><a href="https://www.facebook.com/graemerobinsonstroud" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li-->
-								<!--li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li-->
 								<li><a href="https://www.linkedin.com/in/graeme-stroud" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<!--li><a href="mailto:noone@nowhere.ca" class="icon style2 fa-envelope"><span class="label">Email</span></a></li-->
-								<!--li><a href="RIP" class="icon style2 fa-google-plus"><span class="label">Google+</span></a></li-->
 								<li><a href="https://github.com/stroudgr" class="icon style2 fa-github"><span class="label">Github</span></a></li>
 							</ul>
 						</div>
@@ -259,6 +305,10 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/homepage.js"></script>
 			<script src="assets/js/navigate.js"></script>
+			<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+			<script type="text/javascript" id="MathJax-script" async
+			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+			</script>
 			<noscript>
   			<meta http-equiv="refresh" content="0;url=indexLite.html">
 			</noscript>
