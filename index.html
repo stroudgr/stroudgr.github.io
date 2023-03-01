@@ -45,7 +45,7 @@
         <!-- Nav -->
 			<nav id="bottomNavbar">
 				<ul class="container">
-					<li><a href="#pagetop">&uarr;</a></li>
+					<li><a class="smooth-scroll-middle" href="#pagetop">&uarr;</a></li>
 			</nav>
             
 
@@ -75,7 +75,7 @@
                             <ul class="actions"> <!-- TODO stacked (i.e. "actions stacked") v.s. no stack? -->
 								<li><a href="#resume" class="button big wide smooth-scroll-middle">Resume</a></li>
                                 <li><a href="#academics" class="button big wide smooth-scroll-middle">Academics and Research</a></li>
-								<li><a href="#projects" class="button big wide smooth-scroll-middle">Projects</a></li>
+								<!--li><a href="#projects" class="button big wide smooth-scroll-middle">Projects</a></li-->
 							</ul>
 
 
@@ -264,18 +264,36 @@
 					</section>
 
 				<!-- Five : Courses -->
-					<section class="wrapper style1 align-center" id="projects">
+					
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="projects">
+
+					<div class="content">
+						<h2>Courses and Projects</h2>
+					
+					<!--p> My resume can be found <a href="resume.pdf"> here</a>. </p--> 
+					<p>I have taken many exciting courses at UofT and UWaterloo, and have done many interesting projects during school and on the side.
+						See my <a href="projects.html">projects page</a> for more details.</p>
+					
+						<ul class="actions stacked">
+							<li><a href="#sixth" class="button smooth-scroll-middle">Continue to Programming Skills</a></li>
+						</ul>
+
+					</div>
+				</section>
+
+
+					<!--section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="">
 						<div class="inner">
-							<h2>Courses and Projects</h2>
-							<p>I have taken many exciting courses at UofT and UWaterloo, and have done many interesting projects during school and on the side.
+							
+							
+
 								
-							</p>
-							<p>See my <a href="projects.html">projects page</a> for more details.</p>
 						</div>
 
+						<br>
 
 						<!-- Gallery. TODO CSC367? Machine Learning? 443? -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in" onmousedown="return false">
+							<!--div class="gallery style2 medium lightbox onscroll-fade-in" onmousedown="return false">
 								<!--article>
 									<a href="images/gallery/fulls/kernel.png" class="image">
 										<img src="images/gallery/thumbs/kernel.png" alt="" />
@@ -287,7 +305,7 @@
 											<li><span class="button small">View</span></li>
 										</ul>
 									</div>
-								</article-->
+								</article>
 								<article>
 									<a href="images/gallery/fulls/kernel.png" class="image">
 										<img src="images/gallery/thumbs/kernel.png" alt="" />
@@ -301,7 +319,7 @@
 										</ul>
 									</div>
 								</article>
-								<article> <!--Start-->
+								<article> <!--Start>
 									<a href="images/gallery/fulls/view.jpg" class="image">
 										<img src="images/gallery/fulls/view.jpg" alt="" />
 									</a>
@@ -322,7 +340,7 @@
 										<p>In a group project, we designed a software called Unslack.
 											It's a web extension that allows users to choose sites to blacklist
 											in order to stay focused when using the internet. <!--It includes a
-											feature that compares statistics with your friends so you will keep coming back to the app.--></p>
+											feature that compares statistics with your friends so you will keep coming back to the app.></p>
 										<ul class="actions fixed">
 											<li><span class="button small">View</span></li>
 										</ul>
@@ -342,7 +360,7 @@
 								</article>
 								<article>
 									<a href="https://github.com/stroudgr/UofT" target="_blank" class="image">
-										<!--img src="images/gallery/thumbs/05.jpg" alt="" /-->
+										<!--img src="images/gallery/thumbs/05.jpg" alt="" />
 										<img src="images/gallery/thumbs/compsci_ublue.png" alt="AAA" />
 
 									</a>
@@ -365,7 +383,7 @@
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
-								</article-->
+								</article>
 								<!--article>
 									<a href="images/gallery/fulls/12.jpg" class="image">
 										<img src="images/gallery/thumbs/12.jpg" alt="" />
@@ -377,17 +395,11 @@
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
-								</article-->
+								</article>
 							</div>
-							<br>
-						<div>
-							<br>
-							<ul class="actions stacked">
-								<li><a href="#sixth" class="button smooth-scroll-middle">Continue to Programming Skills</a></li>
-							</ul>
-						</div>
+						
 
-					</section>
+					</section-->
 
 				<!-- Six : Skills-->
 					<section class="wrapper style1 align-center" >
@@ -498,7 +510,7 @@
 					<footer class="wrapper style1 align-center">
 
                         <br><br>
-                                <a href="#toppage" class="button big wide smooth-scroll-middle">Back to top</a>
+                                <a href="#pagetop" class="button big wide smooth-scroll-middle">Back to top</a>
 
 						<div class="inner">
 							<div onmousedown="return false">
